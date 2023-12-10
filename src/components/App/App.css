@@ -1,0 +1,72 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 5rem auto;
+  font-family: "Arial", sans-serif;
+  border: #000000 solid 5px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    var(--pokeball-white) 0%,
+    var(--pokeball-white) 50%,
+    var(--pokeball-red) 50%,
+    var(--pokeball-red) 100%
+  );
+}
+
+.img {
+  border: solid black 2px;
+  border-radius: 50%;
+  margin: 20px;
+  background-color: #ffffff;
+}
+
+/* Define Poké Ball colors */
+:root {
+  --pokeball-red: #ec1c24;
+  --pokeball-white: #ffffff;
+  --pokeball-black: #000000;
+}
+
+/* Style the button */
+button {
+  display: inline-block;
+  width: 100px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid var(--pokeball-black);
+  border-radius: 50%; /* Make the button round */
+  color: var(--pokeball-black);
+}
+
+/* Hover effect */
+.button {
+  background: linear-gradient(
+    to bottom,
+    var(--pokeball-red) 0%,
+    var(--pokeball-red) 50%,
+    var(--pokeball-white) 50%,
+    var(--pokeball-white) 100%
+  );
+  color: var(--pokeball-white);
+}
+
+.logo {
+  width: 15%;
+  padding-top: 0%;
+  padding-bottom: 50px;
+}
+
+.pokemon-viewer {
+  font-size: 20px;
+  font-weight: 1000;
+  color: #ffffff;
+}
